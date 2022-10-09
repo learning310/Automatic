@@ -1,4 +1,5 @@
 import requests
+import datetime
 url = "https://app.xaut.edu.cn/ncov/wap/default/save"
 # 请求头
 headers = {
