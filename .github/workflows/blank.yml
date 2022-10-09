@@ -3,14 +3,13 @@ name: Action Practice
 on:
   push:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 1 * * *'
 
 env:
   TZ: Asia/Shanghai
 
 jobs:
-  # a single job
-  a-job-name:
+  report:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
