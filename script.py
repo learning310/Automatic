@@ -68,5 +68,5 @@ data = {
     "jrsfqzfy":"",
     "ismoved":"0"
 }
-
+print(data["date"])
 print(eval(requests.post(url=url, data=data, headers=headers).text)['m'])
