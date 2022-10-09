@@ -20,6 +20,6 @@ jobs:
         with:
           python-version: '3.x'
       - name: Set up environment
-        run: pip install requests
+        run: pip install requests datetime
       - name: Run
         run: python script.py
