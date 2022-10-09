@@ -67,4 +67,4 @@ data = {
     "ismoved":"0"
 }
 
-requests.post(url=url, data=data, headers=headers)
+print(eval(requests.post(url=url, data=data, headers=headers).text)['m'])
