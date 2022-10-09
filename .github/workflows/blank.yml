@@ -1,22 +1,23 @@
-name: Python application
+name: Action Practice
 
 on:
+  push:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: '0 2 * * *'
+
+env:
+  TZ: Asia/Shanghai
 
 jobs:
-  build:
-  
+  # a single job
+  a-job-name:
     runs-on: ubuntu-latest
-
     steps:
-    
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7
-		
-    - name: Execute script
-      run: |
-        cd Automatic
-        python script.py
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Python3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Run
+        run: python3 ./script.py
