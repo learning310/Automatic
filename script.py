@@ -50,7 +50,7 @@ data = {
     "sftjhb":"0",
     "sftjwh":"0",
     "jcjg":"",
-    "date":str(datetime.date.today() - datetime.timedelta(days=1)).replace("-", ""),
+    "date":str(datetime.date.today()).replace("-", ""),
     "uid":"61784",       #################################################
     "created":str(int(time.time())),
     "jcqzrq":"",
