@@ -20,4 +20,4 @@ jobs:
         with:
           python-version: '3.x'
       - name: Run
-        run: python3 script.py
+        run: ls -la
